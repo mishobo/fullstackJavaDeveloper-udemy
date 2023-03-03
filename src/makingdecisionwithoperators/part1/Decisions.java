@@ -8,6 +8,7 @@ public class Decisions {
 		int z = 7;
 		boolean a = true;
 		boolean b = false;
+		int time = 20;
 		
 		
 		// comparison operator
@@ -38,6 +39,10 @@ public class Decisions {
 		if(!a || !b) {
 			System.out.println("a or b is true");
 		}
+		
+		//ternary operator
+		String result = (time < 18) ? "Good day." : "Good evening.";
+		System.out.println(result);
 
 	}
 
