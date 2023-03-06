@@ -3,8 +3,29 @@ package makingdecisionwithoperators.part1;
 public class ForLoop {
 
 	public static void main(String[] args) {
-		forloop3();
+		forloop5();
 
+	}
+	
+	public static void forloop5() {
+		for(int i=1, j=1; i<10 || j<10; i++,j++) {
+			j++;
+			System.out.println("i="+i+" and j="+j);
+		}
+	}
+	
+	public static void forloop4() {
+		for(int i=1, j=1; i<10 && j<10; i++,j++) {
+			System.out.println("i="+i+" and j="+j);
+		}
+	}
+	
+	public static void whileloop1() {
+		int i = 1;
+		while(i<=10) {
+			System.out.println(i);
+			i++;
+		}
 	}
 	
 	public static void forloop3() {
