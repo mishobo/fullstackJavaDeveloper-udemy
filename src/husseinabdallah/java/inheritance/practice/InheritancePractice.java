@@ -1,22 +1,31 @@
 package husseinabdallah.java.inheritance.practice;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class InheritancePractice {
 
 	public static void main(String[] args) {
+		List<Animal> animals = new ArrayList<>();
 		Animal animal = new Animal();
-		System.out.println(animal.showInfo());
+		Animal reptile = new Reptile();
+		Animal croc = new Crocodile();
+		Animal eel = new Eel();		
+		Animal eagle = new Eagle();
 		
-		Reptile reptile = new Reptile();
-		System.out.println(reptile.showInfo());
+		animals.add(animal);
+		animals.add(reptile);
+		animals.add(croc);
+		animals.add(eel);
+		animals.add(eagle);
 		
-		Crocodile croc = new Crocodile();
-		System.out.println(croc.showInfo());
-		
-		Eel eel = new Eel();
-		System.out.println(eel.showInfo());
-		
-		Eagle eagle = new Eagle();
-		System.out.println(eagle.showInfo());
+		listAnimals(animals);
+	}
+	
+	public static void listAnimals(List<Animal> animals) {
+		for(Animal animal : animals) {
+			System.out.println(animal.showInfo());
+		}
 	}
 
 }

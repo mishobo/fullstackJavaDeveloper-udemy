@@ -1,4 +1,4 @@
-package husseinabdallah.java.inheritance;
+	package husseinabdallah.java.inheritance;
 
 import husseinabdallah.java.inheritance.vechiles.Bike;
 import husseinabdallah.java.inheritance.vechiles.Car;
